@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule %[REQUEST_FILENAME] !-d
+RewriteRule %[REQUEST_FILENAME] !-f
+RewriteCond ^(.*)$ index.php?$url=1 [NC]
